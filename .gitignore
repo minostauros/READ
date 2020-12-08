@@ -1,0 +1,7 @@
+# Redundant folders & files
+*__pycache__
+*.pyc
+
+# macOS file system redundant files
+.DS_Store
+._*
