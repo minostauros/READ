@@ -41,11 +41,11 @@ python play.py --test --dataset mars --json-path path/to/mars_h5/mars.min.json -
 By default, it uses all available GPUs in the machine. 
 It could be limited with `CUDA_VISIBLE_DEVICES`, *e.g.* `CUDA_VISIBLE_DEVICES=0,1,2,3 python ...`
 
-Adjust `--batch-size` accordingly to your GPU capacity. In our case, P40 or V100 GPUs are used with the default batch size is 32.
+Adjust `--batch-size` accordingly to your GPU capacity. In our case, P40 or V100 GPUs are used with the default batch size of 32.
 
 ### Sample Results (MARS)
 ```bash
-python play.py --test --dataset mars --checkpoint-files '{"all":"/volume/READ/mars_demo.tar"}' --json-path /volume/dataset/mars_h5/mars.min.json --h5-dir /volume/mino/dataset/mars_h5/
+python play.py --test --dataset mars --checkpoint-files '{"all":"/volume/READ/mars_demo.tar"}' --json-path /volume/dataset/mars_h5/mars.min.json --h5-dir /volume/dataset/mars_h5/
 
 ...
 
